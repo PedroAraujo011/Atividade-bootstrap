@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Cidades</title>
+    <style>
+      .carousel-item img {
+        height: clamp(240px, 50vw, 560px);
+        object-fit: cover;
+      }
+
+      .city-gallery img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      .city-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Clima tema</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="cidades.html">Cidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="clima.html">Climas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cadastro.html">Cadastro</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Americana.jpg" class="d-block w-100" alt="Vista aérea de Americana">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Campinas.jpg" class="d-block w-100" alt="Igreja e centro de Campinas">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Campos do jordao.jpg" class="d-block w-100" alt="Construções em estilo europeu em Campos do Jordão">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Nova odessa.jpg" class="d-block w-100" alt="Vista aérea de Nova Odessa">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Santa barbara.jpg" class="d-block w-100" alt="Vista de Santa Bárbara d'Oeste">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container text-center my-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+    <div class="col city-gallery">
+      <img src="img/Campos do jordao inverno.webp" class="img-fluid rounded" alt="Vista de Campos do Jordão no inverno">
+    </div>
+    <div class="col city-gallery">
+      <img src="img/Santa Barbara2.jpg" class="img-fluid rounded" alt="Rua arborizada em Santa Bárbara d'Oeste">
+    </div>
+    <div class="col city-gallery">
+      <img src="img/Campinas.jpg" class="img-fluid rounded" alt="Igreja e centro de Campinas">
+    </div>
+    <div class="col city-gallery">
+      <img src="img/Nova odessa.jpg" class="img-fluid rounded" alt="Vista aérea de Nova Odessa">
+    </div>
+  </div>
+</div>
+<div class="container my-4">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 justify-content-center">
+    <div class="col">
+      <div class="card city-card h-100">
+  <img src="img/Campos do jordao.jpg" class="card-img-top" alt="Construções em estilo europeu em Campos do Jordão">
+  <div class="card-body">
+    <h5 class="card-title">Campos do Jordão</h5>
+    <p class="card-text">Conhecida pelo clima de montanha, pela arquitetura de inspiração europeia e pelas paisagens da Serra da Mantiqueira.</p>
+    <a href="cidades.html#campos-do-jordao" class="btn btn-primary">Conheça a cidade</a>
+  </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card city-card h-100">
+  <img src="img/Nova odessa.jpg" class="card-img-top" alt="Vista aérea de Nova Odessa">
+  <div class="card-body">
+    <h5 class="card-title">Nova Odessa</h5>
+    <p class="card-text">Município do interior paulista, Nova Odessa faz parte da Região Metropolitana de Campinas e reúne áreas urbanas e espaços verdes.</p>
+    <a href="cidades.html#nova-odessa" class="btn btn-primary">Conheça a cidade</a>
+  </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card city-card h-100">
+  <img src="img/Santa barbara.jpg" class="card-img-top" alt="Vista de Santa Bárbara d'Oeste">
+  <div class="card-body">
+    <h5 class="card-title">Santa Bárbara d'Oeste</h5>
+    <p class="card-text">Cidade do interior de São Paulo com história ligada à agricultura e ao desenvolvimento industrial da região.</p>
+    <a href="cidades.html#santa-barbara-doeste" class="btn btn-primary">Conheça a cidade</a>
+  </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card city-card h-100">
+  <img src="img/Campinas.jpg" class="card-img-top" alt="Igreja e centro de Campinas">
+  <div class="card-body">
+    <h5 class="card-title">Campinas</h5>
+    <p class="card-text">Importante polo de tecnologia, educação e serviços do interior paulista, Campinas também oferece parques e atrações culturais.</p>
+    <a href="cidades.html#campinas" class="btn btn-primary">Conheça a cidade</a>
+  </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card city-card h-100">
+  <img src="img/Americana.jpg" class="card-img-top" alt="Vista aérea de Americana">
+  <div class="card-body">
+    <h5 class="card-title">Americana</h5>
+    <p class="card-text">Município do interior paulista conhecido por sua tradição na indústria têxtil e por espaços de lazer e áreas verdes.</p>
+    <a href="cidades.html#americana" class="btn btn-primary">Conheça a cidade</a>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
